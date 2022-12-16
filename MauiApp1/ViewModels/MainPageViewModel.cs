@@ -1,23 +1,37 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 
 namespace MauiApp1.ViewModels
 {
-    internal class MainPageViewModel
+    [INotifyPropertyChanged]
+    internal partial class MainPageViewModel 
     {
-        public string Suma(string A, string B)
+        [ObservableProperty]
+        string a;
+
+        [ObservableProperty]
+        string b;
+
+        [ObservableProperty]
+        string lbLSign = "+";
+
+        [ObservableProperty]
+        string result;
+
+        [RelayCommand]
+        void AddBtn()
         {
-            string Resultado = (Int64.Parse(A) + Int64.Parse(B)).ToString();
-            return Resultado;
+            LbLSign = "+";
+            Result = (Int64.Parse(a) + Int64.Parse(b)).ToString();
         }
 
-        public string Resta(string A, string B)
+        [RelayCommand]
+        void SubtractBtn()
         {
-            string Resultado = (Int64.Parse(A) - Int64.Parse(B)).ToString();
-            return Resultado;
+            LbLSign = "-";
+            Result = (Int64.Parse(a) - Int64.Parse(b)).ToString();
         }
+
+
     }
 }
