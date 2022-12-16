@@ -17,7 +17,7 @@ public partial class MainPage : ContentPage
         stopwatch.Restart();
         lblResult.Text = MainPageViewModel_Object.Suma(A.Text, B.Text);
         lblSign.Text = "+";
-        Timer.Text = (stopwatch.Elapsed * 1000).ToString(); 
+        Timer.Text = "Time: " + (stopwatch.Elapsed * 1000).ToString(); 
         stopwatch.Stop();
     }
 
@@ -26,7 +26,7 @@ public partial class MainPage : ContentPage
         stopwatch.Restart();
         lblResult.Text = MainPageViewModel_Object.Resta(A.Text, B.Text);
         lblSign.Text =   "-";
-        Timer.Text = (stopwatch.Elapsed * 1000).ToString();
+        Timer.Text = "Time: " + (stopwatch.Elapsed * 1000).ToString();
         stopwatch.Stop();
     }
 }
