@@ -22,6 +22,8 @@
 
             <Button Text="Sumar"  Command="{Binding AddBtnCommand}"/>
             <Button Text="Restar" Command="{Binding SubtractBtnCommand}"/>
+
+            <Label Text="{Binding Timer}"/>
         </StackLayout>
     </ContentPage.Content>
 
