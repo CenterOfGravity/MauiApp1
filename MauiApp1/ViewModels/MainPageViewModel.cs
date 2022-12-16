@@ -10,14 +10,12 @@ namespace MauiApp1.ViewModels
     {
         public string Suma(string A, string B)
         {
-            string Resultado = (Int64.Parse(A) + Int64.Parse(B)).ToString();
-            return Resultado;
+            return (Int64.Parse(A) + Int64.Parse(B)).ToString();
         }
 
         public string Resta(string A, string B)
         {
-            string Resultado = (Int64.Parse(A) - Int64.Parse(B)).ToString();
-            return Resultado;
+            return (Int64.Parse(A) - Int64.Parse(B)).ToString();
         }
     }
 }

@@ -18,6 +18,7 @@
 
             <Button x:Name="AddBtn" Text="Sumar"  Clicked="AddBtn_Clicked" />
             <Button x:Name="SubtractBtn" Text="Restar" Clicked="SubtractBtn_Clicked"/>
+            <Label x:Name="Timer"/>
         </StackLayout>
     </ContentPage.Content>
 
