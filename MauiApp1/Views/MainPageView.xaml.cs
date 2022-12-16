@@ -19,7 +19,7 @@ public partial class MainPage : ContentPage
     private void SubtractBtn_Clicked(object sender, EventArgs e)
     {
         lblResult.Text = MainPageViewModel_Object.Resta(A.Text, B.Text);
-        lblSign.Text = "-";
+        lblSign.Text =   "-";
     }
 }
 
